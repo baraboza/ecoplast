@@ -1,0 +1,35 @@
+.simple-test {
+	background-image: url('../img/simple-test.jpg');
+	background-size: cover;
+	background-position: center 0;
+
+	&__content {
+		height: 606px;
+		padding-top: 113px;
+		max-width: 630px;
+		margin-right: 130px;
+		margin-left: auto;
+	}
+
+	&__title {
+		font-size: 40px;
+		line-height: 50px;
+		font-weight: 600;
+
+		b {
+			font-weight: 700;
+			color: #0dbbd8;
+		}
+	}
+
+	&__descr {
+		margin-top: 50px;
+		font-size: 22px;
+		line-height: 30px;
+		font-weight: 600;
+	}
+
+	&__button {
+		margin-top: 50px;
+	}
+}

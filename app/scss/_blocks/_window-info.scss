@@ -1,0 +1,142 @@
+.window-info {
+	padding: 35px 0 58px;
+
+	&__box {
+		border-radius: 15px;
+		background-color: #f4f4f4;
+		padding: 40px 50px 30px;
+		min-height: 600px;
+		display: flex;
+	}
+
+	&__banner {
+		margin-top: 54px;
+		flex-shrink: 0;
+		width: 670px;
+		height: 398px;
+		background-image: url('../img/window-info-banner-bg.png');
+		background-size: 100% 100%;
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding-left: 90px;
+	}
+
+	&__banner-text {
+		color: #fff;
+		font-size: 36px;
+		line-height: 48px;
+		font-weight: 500;
+
+		b {
+			font-weight: 800;
+		}
+	}
+
+	&__img-box {
+		position: absolute;
+		top: -73px;
+		right: -198px;
+	}
+
+	&__img-item {
+		position: absolute;
+		@include circle(32px);
+		background-color: #0dbbd8;
+		box-shadow: 0 0 0 5px rgba(#fff, 0.5);
+		cursor: pointer;
+		transition: background-color 0.25s;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			background-color: #fff;
+			transition: background-color 0.25s;
+		}
+
+		&::before {
+			width: 2px;
+			height: 12px;
+			top: 10px;
+			left: 15px;
+		}
+
+		&::after {
+			width: 12px;
+			height: 2px;
+			top: 15px;
+			left: 10px;
+		}
+
+		&:nth-child(1) {
+			top: 67px;
+			left: 255px;
+		}
+
+		&:nth-child(2) {
+			top: 192px;
+			left: 186px;
+		}
+
+		&:nth-child(3) {
+			top: 318px;
+			left: 134px;
+		}
+
+		&:nth-child(4) {
+			top: 424px;
+			left: 109px;
+		}
+
+		&:hover,
+		&.--active {
+			background-color: #fff;
+
+			&::before,
+			&::after {
+				background-color: #0dbbd8;
+			}
+		}
+	}
+
+	&__list {
+		margin-left: 182px;
+		flex-grow: 1;
+	}
+
+	&__item {
+		padding: 20px 15px 25px 25px;
+		border-radius: 8px;
+		transition: 0.25s;
+
+		&:nth-child(n + 2) {
+			margin-top: 10px;
+		}
+
+		&.--active {
+			background-color: #fff;
+			box-shadow: 0 10px 20px rgba(#dcdedf, 0.3);
+
+			.window-info {
+				&__item-title {
+					color: #0dbbd8;
+				}
+			}
+		}
+	}
+
+	&__item-title {
+		font-size: 18px;
+		line-height: 21px;
+		font-weight: 600;
+		transition: color 0.25s;
+	}
+
+	&__item-descr {
+		margin-top: 10px;
+		font-size: 16px;
+		line-height: 21px;
+		max-width: 330px;
+	}
+}

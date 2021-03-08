@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face('Futura PT', '../font/FuturaPT/FuturaPT-Light', 300);
+@include font-face('Futura PT', '../font/FuturaPT/FuturaPT-Book');
+@include font-face('Futura PT', '../font/FuturaPT/FuturaPT-Medium', 500);
+@include font-face('Futura PT', '../font/FuturaPT/FuturaPT-Demi', 600);
+@include font-face('Futura PT', '../font/FuturaPT/FuturaPT-Bold', 700);
+@include font-face('Futura PT', '../font/FuturaPT/FuturaPT-ExtraBold', 800);

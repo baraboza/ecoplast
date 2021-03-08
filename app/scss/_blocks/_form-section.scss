@@ -1,0 +1,30 @@
+.form-section {
+	background-image: url('../img/form-section-bg.jpg');
+	background-size: cover;
+	background-position: center 0;
+
+	&__container {
+		min-height: 574px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__text {
+		margin-left: 40px;
+		max-width: 400px;
+		font-size: 40px;
+		line-height: 50px;
+		font-weight: 600;
+
+		b {
+			color: #0dbbd8;
+		}
+	}
+
+	&__form {
+		margin-right: 50px;
+	}
+}
