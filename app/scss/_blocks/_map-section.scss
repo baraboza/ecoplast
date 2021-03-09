@@ -18,3 +18,21 @@
 		position: relative;
 	}
 }
+
+@include media-breakpoint-down(md) {
+	.map-section {
+
+		&__map {
+			position: static;
+			height: 250px;
+		}
+
+		&__container {
+			padding: 0 0 30px;
+		}
+
+		&__form {
+			box-shadow: none;
+		}
+	}
+}

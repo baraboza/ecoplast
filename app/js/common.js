@@ -1,5 +1,10 @@
 $(function() {
 
+$('.header__toggle').click(function() {
+	$(this).toggleClass('active');
+	$('.header__mobile').slideToggle();
+});
+
 $('input[type=tel]').mask('+7 (999) 999-99-99');
 
 $('.window-info__img-item').click(function() {
@@ -65,6 +70,11 @@ $('.projects__next-object').click(function() {
 	}
 	projectsSetObject(index);
 	$('.projects__objects-list').slick('slickNext');
+});
+
+$('.footer__menu-title--mobile-toggle').click(function() {
+	$(this).toggleClass('--active');
+	$(this).next().slideToggle();
 });
 
 });

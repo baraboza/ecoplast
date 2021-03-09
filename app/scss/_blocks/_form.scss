@@ -46,3 +46,10 @@
 		margin-top: 43px;
 	}
 }
+
+@include media-breakpoint-down(md) {
+	.form {
+		width: 100%;
+		padding: 20px;
+	}
+}
