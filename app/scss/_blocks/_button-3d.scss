@@ -11,13 +11,15 @@
 	font-weight: 600;
 	box-shadow:
 		inset 0 -5px 10px rgba(#fff, 0.3),
-		0 5px 0 #ea0e04;
+		0 5px 0 #ea0e04,
+		0 13px 25px rgba(#ea0e04, 0.4);
 	transition: 0.25s;
 
 	&:hover {
 		transform: translate(0, 3px);
 		box-shadow:
 			inset 0 -5px 10px rgba(#fff, 0.3),
-			0 2px 0 #ea0e04;
+			0 2px 0 #ea0e04,
+			0 6px 12px rgba(#ea0e04, 0.4);
 	}
 }

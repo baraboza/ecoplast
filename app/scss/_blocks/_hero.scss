@@ -1,8 +1,29 @@
 .hero {
-	background-image: url('../img/hero-bg.jpg');
-	background-size: cover;
-	background-position: center 0;
 	padding: 30px 0;
+	position: relative;
+
+	&__slider {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		.slick-list,
+		.slick-track {
+			height: 100%;
+		}
+	}
+
+	&__slider-item {
+		background-image: url('../img/hero-bg.jpg');
+		background-size: cover;
+		background-position: center 0;
+	}
+
+	&__container {
+		position: relative;
+	}
 
 	&__main {
 		display: flex;
@@ -103,6 +124,36 @@
 		font-size: 16px;
 		line-height: 21px;
 	}
+
+	&__slider-nav {
+		position: relative;
+	}
+
+	&__slider-nav-box {
+		position: absolute;
+		right: 15px;
+		bottom: 12px;
+		display: flex;
+	}
+
+	&__slider-prev,
+	&__slider-next {
+		@include flex-center;
+		@include circle(47px);
+		border: none;
+		background-color: rgba(#fff, 0.7);
+		transition: background-color 0.25s;
+		color: #0dbbd8;
+		box-shadow: 0 10px 20px rgba(#c8c8c8, 0.64);
+
+		&:hover {
+			background-color: #fff;
+		}
+	}
+
+	&__slider-prev {
+		margin-right: 21px;
+	}
 }
 
 @include media-breakpoint-down(lg) {
@@ -177,6 +228,10 @@
 			br {
 				display: none;
 			}
+		}
+
+		&__slider-nav {
+			display: none;
 		}
 	}
 }

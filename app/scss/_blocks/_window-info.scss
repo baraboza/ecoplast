@@ -4,8 +4,7 @@
 	&__box {
 		border-radius: 15px;
 		background-color: #f4f4f4;
-		padding: 40px 50px 30px;
-		min-height: 600px;
+		padding: 20px 20px 20px 50px;
 		display: flex;
 	}
 
@@ -19,7 +18,7 @@
 		display: flex;
 		align-items: center;
 		position: relative;
-		padding-left: 90px;
+		padding-left: 80px;
 	}
 
 	&__banner-text {
@@ -35,102 +34,55 @@
 
 	&__img-box {
 		position: absolute;
-		top: -73px;
-		right: -198px;
-	}
-
-	&__img-item {
-		position: absolute;
-		@include circle(32px);
-		background-color: #0dbbd8;
-		box-shadow: 0 0 0 5px rgba(#fff, 0.5);
-		cursor: pointer;
-		transition: background-color 0.25s;
-
-		&::before,
-		&::after {
-			content: '';
-			position: absolute;
-			background-color: #fff;
-			transition: background-color 0.25s;
-		}
-
-		&::before {
-			width: 2px;
-			height: 12px;
-			top: 10px;
-			left: 15px;
-		}
-
-		&::after {
-			width: 12px;
-			height: 2px;
-			top: 15px;
-			left: 10px;
-		}
-
-		&:nth-child(1) {
-			top: 67px;
-			left: 255px;
-		}
-
-		&:nth-child(2) {
-			top: 192px;
-			left: 186px;
-		}
-
-		&:nth-child(3) {
-			top: 318px;
-			left: 134px;
-		}
-
-		&:nth-child(4) {
-			top: 424px;
-			left: 109px;
-		}
-
-		&:hover,
-		&.--active {
-			background-color: #fff;
-
-			&::before,
-			&::after {
-				background-color: #0dbbd8;
-			}
-		}
+		top: -22px;
+		right: -137px;
 	}
 
 	&__list {
-		margin-left: 182px;
+		margin-left: 160px;
 		flex-grow: 1;
+		padding: 35px 20px 40px 78px;
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 10px 20px rgba(#dcdedf, 0.3);
 	}
 
 	&__item {
-		padding: 20px 15px 25px 25px;
-		border-radius: 8px;
-		transition: 0.25s;
+		position: relative;
 
 		&:nth-child(n + 2) {
-			margin-top: 10px;
+			margin-top: 50px;
 		}
 
-		&.--active {
-			background-color: #fff;
-			box-shadow: 0 10px 20px rgba(#dcdedf, 0.3);
+		&:hover {
 
 			.window-info {
-				&__item-title {
-					color: #0dbbd8;
+				&__item-check {
+					top: -7px;
 				}
 			}
 		}
+	}
+
+	&__item-check {
+		@include flex-center;
+		@include circle(42px);
+		position: absolute;
+		left: -56px;
+		top: -15px;
+		color: #fff;
+		background-color: #0dbbd8;
+		border: 5px solid #fff;
+		font-size: 13px;
+		box-shadow: 0 10px 20px rgba(#0dbbd8, 0.2);
+		transition: top 0.25s;
 	}
 
 	&__item-title {
 		font-size: 18px;
 		line-height: 21px;
 		font-weight: 600;
-		transition: color 0.25s;
+		color: #0dbbd8;
 	}
 
 	&__item-descr {
@@ -151,7 +103,15 @@
 		&__list {
 			margin-left: 0;
 			width: 100%;
-			margin-top: 20px;
+			padding: 15px 15px 15px 50px;
+		}
+
+		&__item-check {
+			left: -40px;
+			width: 30px;
+			height: 30px;
+			border-width: 3px;
+			top: -5px;
 		}
 	}
 }

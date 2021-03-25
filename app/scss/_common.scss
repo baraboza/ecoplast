@@ -69,13 +69,13 @@ i, em {
 			cursor: pointer;
 			font-size: 14px;
 			font-weight: 300;
-			color: #666666;
+			color: #fff;
 
 			&::before {
 				content: '';
 				width: 13px;
 				height: 13px;
-				border: 1px solid #666666;
+				border: 1px solid #fff;
 				margin-right: 10px;
 				flex-shrink: 0;
 			}

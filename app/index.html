@@ -20,14 +20,16 @@
 			<div class="header__top-container container">
 				<nav class="header__top-nav">
 					<ul class="header__top-nav-list">
+						<li class="header__top-nav-item"><a href="#">О компании</a></li>
 						<li class="header__top-nav-item"><a href="#">Каталог</a></li>
 						<li class="header__top-nav-item"><a href="#">Услуги</a></li>
-						<li class="header__top-nav-item"><a href="#">О компании</a></li>
+						<li class="header__top-nav-item"><a href="#">Кредит и рассрочка</a></li>
 						<li class="header__top-nav-item"><a href="#">Наши работы</a></li>
 						<li class="header__top-nav-item"><a href="#">Новости</a></li>
 						<li class="header__top-nav-item"><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
+				<p class="header__schedule">График работы: Пн.-Сб. с 09:00 до 18:00</p>
 				<ul class="header__social-list">
 					<li class="header__social-item">
 						<a href="#" target="_blank" rel="nofollow">
@@ -58,18 +60,18 @@
 					<img src="img/logo.png" alt="Eco Plast Kerch">
 				</a>
 				<h1 class="header__title">
-					Монтаж окон и балконов, 
-					солнцезащита и утепление 
-					фасадов в Керчи
+					Остекление <br>
+					и солнцезащита <br>
+					в Керчи
 				</h1>
 				<p class="header__addresses">
 					Керчь, ул. Сморжевского, 4 <br>
 					Керчь, ул. Орджоникидзе, 37Б
 				</p>
-				<p class="header__schedule">
-					График работы: <br>
-					Пн.-Сб. с 09:00 до 18:00
-				</p>
+				<form class="header__search">
+					<input type="text" placeholder="Поиск по сайту" class="header__search-input">
+					<button type="submit" class="header__search-button"><i class="fas fa-search"></i></button>
+				</form>
 				<ul class="header__phones-list">
 					<li class="header__phones-item">
 						<a href="tel:+79789411000" rel="nofollow">+7 (978) 941-10-00</a>
@@ -93,10 +95,10 @@
 					<li class="header__bottom-item"><a href="#">Двери</a></li>
 					<li class="header__bottom-item"><a href="#">Балконы</a></li>
 					<li class="header__bottom-item"><a href="#">Роллеты</a></li>
-					<li class="header__bottom-item"><a href="#">Защита от солнца</a></li>
 					<li class="header__bottom-item"><a href="#">Утепление фасадов</a></li>
 					<li class="header__bottom-item"><a href="#">Комплектующие</a></li>
 					<li class="header__bottom-item"><a href="#">Откосы</a></li>
+					<li class="header__bottom-item"><a href="#">Защита от солнца</a></li>
 				</ul>
 			</div>
 		</div>
@@ -144,6 +146,10 @@
 
 	<main>
 		<section class="hero">
+			<div class="hero__slider">
+				<div class="hero__slider-item" style="background-image: url(img/hero-bg.jpg)"></div>
+				<div class="hero__slider-item" style="background-image: url(img/hero-bg-2.jpg)"></div>
+			</div>
 			<div class="hero__container container">
 				<div class="hero__main">
 					<div class="hero__main-content">
@@ -186,6 +192,12 @@
 						<p class="hero__info-text">Мы разработали технические решения, укомплектовали<br> и смонтировали более 350 объектов</p>
 					</li>
 				</ul>
+			</div>
+			<div class="hero__slider-nav container">
+				<div class="hero__slider-nav-box">
+					<button class="hero__slider-prev"><i class="fas fa-chevron-left"></i></button>
+					<button class="hero__slider-next"><i class="fas fa-chevron-right"></i></button>
+				</div>
 			</div>
 		</section>
 
@@ -245,6 +257,45 @@
 			</div>
 		</section>
 
+		<section class="offer">
+			<div class="offer__container container">
+				<div class="offer__content">
+					<p class="offer__title">Бесплатный замер</p>
+					<p class="offer__subtitle">Заказывая окна онлайн вы получаете <b>скидку 30%</b></p>
+					<p class="offer__descr">Действие акции <b>ограничено</b>, не упустите эту возможность</p>
+					<div class="offer__timer">
+						<p class="offer__timer-title">До конца акции:</p>
+						<div class="offer__timer-row">
+							<div class="offer__timer-col">
+								<p class="offer__timer-fields"><span>0</span><span>1</span></p>
+								<p class="offer__timer-label">Дней</p>
+							</div>
+							<span class="offer__timer-separator">:</span>
+							<div class="offer__timer-col">
+								<p class="offer__timer-fields"><span>1</span><span>2</span></p>
+								<p class="offer__timer-label">Часов</p>
+							</div>
+							<span class="offer__timer-separator">:</span>
+							<div class="offer__timer-col">
+								<p class="offer__timer-fields"><span>4</span><span>5</span></p>
+								<p class="offer__timer-label">Минут</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<form action="" class="offer__form form">
+					<p class="form__title">Заполните форму</p>
+					<p class="form__descr">и наш менеджер свяжется с Вами<br> в течение 10 минут</p>
+					<input type="text" class="form__input" placeholder="Ваше имя">
+					<input type="tel" class="form__input" placeholder="+7 (___) ___-__-__">
+					<input type="submit" class="form__button button-3d" value="Отправить">
+					<div class="form__checkbox-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</form>
+			</div>
+		</section>
+
 		<section class="window-info">
 			<div class="window-info__container container">
 				<div class="window-info__box">
@@ -257,28 +308,26 @@
 						</p>
 						<div class="window-info__img-box">
 							<img src="img/window-info.png" alt="">
-							<ul class="window-info__img-list">
-								<li class="window-info__img-item --active"></li>
-								<li class="window-info__img-item"></li>
-								<li class="window-info__img-item"></li>
-								<li class="window-info__img-item"></li>
-							</ul>
 						</div>
 					</div>
 					<ul class="window-info__list">
 						<li class="window-info__item --active">
+							<span class="window-info__item-check"><i class="fas fa-check"></i></span>
 							<p class="window-info__item-title">Стеклопакет Stis DS Next и тёплая рамка Multitech</p>
 							<p class="window-info__item-descr">с теплопроводностью в 1000 раз ниже,<br> чем у обычных алюминиевых рамок</p>
 						</li>
 						<li class="window-info__item">
+							<span class="window-info__item-check"><i class="fas fa-check"></i></span>
 							<p class="window-info__item-title">Мультифункциональное стекло</p>
 							<p class="window-info__item-descr">Позволяет не создавать парилку на лоджии,<br> если она расположена на южной стороне</p>
 						</li>
 						<li class="window-info__item">
+							<span class="window-info__item-check"><i class="fas fa-check"></i></span>
 							<p class="window-info__item-title">Профессиональный уплотнитель Semperit</p>
 							<p class="window-info__item-descr">Температура эксплуатации от −55°С до +100°С.<br> Cоответствует действующим европейским<br> и российским стандартам качества</p>
 						</li>
 						<li class="window-info__item">
+							<span class="window-info__item-check"><i class="fas fa-check"></i></span>
 							<p class="window-info__item-title">Теплый профиль класса A немецкого бренда Veka</p>
 							<p class="window-info__item-descr">Теплый профиль класса A немецкого бренда Veka, который прослужит более 60 лет</p>
 						</li>
@@ -287,13 +336,25 @@
 			</div>
 		</section>
 
-		<section class="simple-test">
-			<div class="simple-test__container container">
-				<div class="simple-test__content">
-					<p class="simple-test__title">Пройдите простой тест за 1&nbsp;минуту и получите смету на монтаж окон на <b>13%&nbsp;дешевле рынка</b></p>
-					<p class="simple-test__descr">Вы укажете параметры, а мы отправим Вам смету в WhatsApp или позвоним в указанное Вами время</p>
-					<a href="#" class="simple-test__button button-3d">Рассчитать стоимость</a>
-				</div>
+		<section class="form-section">
+			<div class="form-section__container container">
+				<p class="form-section__text">
+					Заполните форму <br>
+					и получите <br>
+					<b>энергосберегающий <br>
+					стеклопакет</b> <br>
+					по цене обычного
+				</p>
+				<form action="" class="form-section__form form">
+					<p class="form__title">Заполните форму</p>
+					<p class="form__descr">и наш менеджер свяжется с Вами<br> в течение 10 минут</p>
+					<input type="text" class="form__input" placeholder="Ваше имя">
+					<input type="tel" class="form__input" placeholder="+7 (___) ___-__-__">
+					<input type="submit" class="form__button button-3d" value="Отправить">
+					<div class="form__checkbox-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</form>
 			</div>
 		</section>
 
@@ -329,25 +390,13 @@
 			</div>
 		</section>
 
-		<section class="form-section">
-			<div class="form-section__container container">
-				<p class="form-section__text">
-					Заполните форму <br>
-					и получите <br>
-					<b>энергосберегающий <br>
-					стеклопакет</b> <br>
-					по цене обычного
-				</p>
-				<form action="" class="form-section__form form">
-					<p class="form__title">Заполните форму</p>
-					<p class="form__descr">и наш менеджер свяжется с Вами<br> в течение 10 минут</p>
-					<input type="text" class="form__input" placeholder="Ваше имя">
-					<input type="tel" class="form__input" placeholder="+7 (___) ___-__-__">
-					<input type="submit" class="form__button button-3d" value="Отправить">
-					<div class="form__checkbox-wrap">
-						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
-					</div>
-				</form>
+		<section class="simple-test">
+			<div class="simple-test__container container">
+				<div class="simple-test__content">
+					<p class="simple-test__title">Пройдите простой тест за 1&nbsp;минуту и получите смету на монтаж окон на <b>13%&nbsp;дешевле рынка</b></p>
+					<p class="simple-test__descr">Вы укажете параметры, а мы отправим Вам смету в WhatsApp или позвоним в указанное Вами время</p>
+					<a href="#" class="simple-test__button button-3d">Рассчитать стоимость</a>
+				</div>
 			</div>
 		</section>
 
@@ -847,8 +896,11 @@
 		</section>
 
 		<section class="map-section">
-			<div id="map" class="map-section__map">
-				
+			<div class="map-section__col-left">
+				<div class="map-section__map-left" id="map-left"></div>
+			</div>
+			<div class="map-section__col-right">
+				<div class="map-section__map-right" id="map-right"></div>
 			</div>
 			<div class="map-section__container container">
 				<form action="" class="map-section__form form">
@@ -960,19 +1012,31 @@
 	<script>
 		ymaps.ready(init);
 		function init(){
-			var location = [45.360779, 36.513300];
+			mapInit(
+				[45.360779, 36.513300],
+				"map-left",
+				"Керчь,<br> ул. Сморжевского, 4"
+			);
+
+			mapInit(
+				[45.289989, 36.416255],
+				"map-right",
+				"Керчь,<br> ул. Орджоникидзе, 37 б"
+			);
+		}
+
+		function mapInit(location, id, balloonContentBody) {
 			var myMap = new ymaps.Map(
-				"map", 
+				id, 
 				{
 					center: location,
-					zoom: 17,
+					zoom: 16,
 					controls: []
 				}
 			);
 			myMap.behaviors.disable('scrollZoom');
 			var myPlacemark = new ymaps.Placemark(location, {
-				balloonContentHeader: "Тепло к вам",
-				balloonContentBody: "г. Симферополь, <br> пр. Победы, 256",
+				balloonContentBody: balloonContentBody,
 				hintContent: "Показать адрес"
 			}, {
 				iconLayout: 'default#image',
@@ -981,29 +1045,6 @@
 				iconImageOffset: [-20,-51]
 			});
 			myMap.geoObjects.add(myPlacemark);
-
-			var zoomControl = new ymaps.control.ZoomControl({
-				options: {
-					size: "small",
-					position: {
-						left: 'auto',
-						top: '150px',
-						right: '12px'
-					}
-				}
-			});
-			myMap.controls.add(zoomControl);
-
-			var geolocationControl = new ymaps.control.GeolocationControl({
-				options: {
-					position: {
-						left: 'auto',
-						top: '230px',
-						right: '12px'
-					}
-				}
-			});
-			myMap.controls.add(geolocationControl);
 		}
 	</script>
 </body>

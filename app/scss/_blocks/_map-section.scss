@@ -1,12 +1,27 @@
 .map-section {
 	position: relative;
 
-	&__map {
+	&__col-left {
 		position: absolute;
 		top: 0;
 		left: 0;
+		right: 50%;
+		bottom: 0;
+		padding-right: 15px;
+	}
+
+	&__col-right {
+		position: absolute;
+		top: 0;
+		left: 50%;
 		right: 0;
 		bottom: 0;
+		padding-left: 15px;
+	}
+
+	&__map-left,
+	&__map-right {
+		height: 100%;
 	}
 
 	&__container {
@@ -16,13 +31,16 @@
 
 	&__form {
 		position: relative;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
 @include media-breakpoint-down(md) {
 	.map-section {
 
-		&__map {
+		&__col-left,
+		&__col-right {
 			position: static;
 			height: 250px;
 		}

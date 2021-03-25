@@ -7,11 +7,20 @@ $('.header__toggle').click(function() {
 
 $('input[type=tel]').mask('+7 (999) 999-99-99');
 
-$('.window-info__img-item').click(function() {
-	$('.window-info__img-item').removeClass('--active');
-	$('.window-info__item').removeClass('--active');
-	$(this).addClass('--active');
-	$('.window-info__item').eq($('.window-info__img-item').index(this)).addClass('--active');
+$('.hero__slider').slick({
+	prevArrow: '.hero__slider-prev',
+	nextArrow: '.hero__slider-next',
+	autoplay: true,
+	autoplaySpeed: 5000,
+
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				autoplay: false
+			}
+		}
+	]
 });
 
 $(window).scroll(function () {
@@ -43,16 +52,6 @@ $('.projects__objects-list').slick({
 	verticalSwiping: true,
 	swipeToSlide: true
 });
-
-// $('.projects__gallery').each(function(i, el) {
-// 	let parent = $(el);
-
-// 	parent.find('.projects__gallery-list').slick({
-// 		prevArrow: parent.find('.projects__gallery-prev'),
-// 		nextArrow: parent.find('.projects__gallery-next'),
-// 		dots: true
-// 	});
-// });
 
 projectsSetObject(0);
 
@@ -97,3 +96,11 @@ function projectsSetObject(index) {
 
 	$('.projects__object-content').eq(index).fadeIn();
 }
+
+
+function factorial(n) {
+	if (n < 0) return 0;
+	else if (n == 0) return 1;
+	else return n * factorial(n - 1);
+}
+
