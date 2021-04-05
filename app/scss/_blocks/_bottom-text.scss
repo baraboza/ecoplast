@@ -1,0 +1,15 @@
+.bottom-text {
+	padding: 50px 0;
+	background-color: #FCFCFC;
+
+	&__col {
+		margin-left: auto;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.bottom-text {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}

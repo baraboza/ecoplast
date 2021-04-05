@@ -1,0 +1,45 @@
+.text-with-image {
+	margin: 60px 0;
+
+	&__title {
+		font-size: 36px;
+		line-height: 46px;
+		font-weight: 500;
+		color: #000;
+	}
+
+	&__row {
+		margin-top: 23px;
+	}
+
+	&__img-box {
+		border-radius: 8px;
+		overflow: hidden;
+		@include img-box-ratio(503 / 565);
+		margin-top: 8px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.text-with-image {
+		margin: 30px 0;
+
+		&__title {
+			font-size: 24px;
+			line-height: 28px;
+		}
+
+		&__row {
+			margin-top: 20px;
+		}
+
+		&__col-image {
+			order: -1;
+			margin-top: 0;
+		}
+
+		&__col-text {
+			margin-top: 15px;
+		}
+	}
+}

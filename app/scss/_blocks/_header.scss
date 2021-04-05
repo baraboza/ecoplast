@@ -171,6 +171,7 @@
 
 @include media-breakpoint-down(md) {
 	.header {
+		border-bottom: 1px solid #ebebeb;
 
 		&__top {
 			display: none;

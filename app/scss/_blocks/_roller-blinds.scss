@@ -1,0 +1,156 @@
+.roller-blinds {
+	margin-top: 50px;
+	margin-bottom: 60px;
+
+	&__title {
+		text-align: center;
+		font-size: 36px;
+		line-height: 46px;
+		font-weight: 500;
+		color: #000;
+	}
+
+	&__tabs {
+		margin: 15px -10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__tabs-item {
+		margin-top: 20px;
+		padding: 0 10px;
+
+		a {
+			display: block;
+			background: #F4F4F4;
+			border-radius: 8px;
+			padding: 14px 24px 13px;
+			line-height: 21px;
+			color: #747474;
+			font-weight: 600;
+
+			&.--active {
+				background: linear-gradient(180deg, #6CD6E2 0%, #0EBBD8 100%);
+				color: #fff;
+			}
+		}
+	}
+
+	&__block {
+		margin-top: 35px;
+	}
+
+	&__block-title {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	&__row {
+		margin-top: 30px;
+	}
+
+	&__main-img-box {
+		@include img-box-ratio(290 / 446);
+		overflow: hidden;
+		border-radius: 8px;
+
+		img {
+			transition: transform 0.25s;
+		}
+
+		&:hover {
+
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&__list {
+		margin-top: -30px;
+	}
+
+	&__item {
+		margin-top: 30px;
+	}
+
+	&__item-box {
+		@include img-box-ratio(130 / 208);
+		border: 1px solid #F4F4F4;
+		border-radius: 8px;
+		box-shadow: 0px 10px 20px rgba(220, 222, 223, 0.3);
+		overflow: hidden;
+		transition: 0.25s;
+
+		&:hover {
+			transform: translate(0, -8px);
+		}
+	}
+
+	&__item-title {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		height: 38px;
+		padding-top: 10px;
+		background-image: url("data:image/svg+xml,%3Csvg width='208' height='41' viewBox='0 0 208 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='103.5' cy='38' rx='156.5' ry='38' fill='white'/%3E%3C/svg%3E%0A");
+		background-position: top center;
+	}
+
+	&__download {
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__download-button {
+		width: 292px;
+
+		svg {
+			margin-right: 10px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.roller-blinds {
+		margin-top: 30px;
+		margin-bottom: 30px;
+
+		&__title {
+			font-size: 26px;
+			line-height: 30px;
+		}
+
+		&__tabs-item {
+			margin-top: 10px;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		&__block {
+			margin-top: 25px;
+		}
+
+		&__block-title {
+			font-size: 18px;
+			line-height: 22px;
+		}
+
+		&__row {
+			margin-top: 20px;
+		}
+
+		&__list {
+			margin-top: 0;
+		}
+
+		&__download {
+			margin-top: 30px;
+		}
+	}
+}

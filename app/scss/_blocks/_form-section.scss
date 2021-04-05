@@ -27,6 +27,20 @@
 	&__form {
 		margin-right: 50px;
 	}
+
+	&--roller-blinds {
+		background-image: url('../img/roller-blinds/roller-blinds-form-section-bg.jpg');
+
+		.form-section {
+			&__text {
+				margin-left: 18px;
+			}
+
+			&__form {
+				margin-right: 55px;
+			}
+		}
+	}
 }
 
 @include media-breakpoint-down(lg) {
@@ -38,6 +52,19 @@
 
 		&__form {
 			margin-right: 0;
+		}
+
+		&--roller-blinds {
+
+			.form-section {
+				&__text {
+					margin-left: 0;
+				}
+
+				&__form {
+					margin-right: 0;
+				}
+			}
 		}
 	}
 }

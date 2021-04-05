@@ -1,0 +1,56 @@
+.article {
+	font-size: 16px;
+	line-height: 24px;
+
+	b {
+		font-weight: 600;
+	}
+
+	h2, h3, h4, h5 {
+
+		&:nth-child(n + 2) {
+			margin-top: 16px;
+		}
+
+		&:nth-last-child(n + 2) {
+			margin-bottom: 16px;
+		}
+	}
+
+	p {
+
+		&:nth-child(n + 2) {
+			margin-top: 16px;
+		}
+	}
+
+	h5 {
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 600;
+	}
+
+	ul, li {
+
+		&:nth-child(n + 2) {
+			margin-top: 8px;
+		}
+	}
+
+	ul {
+
+		> li {
+			padding-left: 20px;
+			position: relative;
+
+			&::before {
+				content: '';
+				@include circle(5px);
+				background-color: #0dbbd8;
+				position: absolute;
+				top: 10px;
+				left: 5px;
+			}
+		}
+	}
+}
