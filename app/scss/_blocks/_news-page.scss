@@ -1,0 +1,38 @@
+.news-page {
+	margin: 65px 0 70px;
+
+	&__title {
+		font-size: 36px;
+		line-height: 48px;
+		text-align: center;
+		font-weight: 500;
+	}
+
+	&__item {
+		margin-top: 48px;
+	}
+
+	&__pagination {
+		margin-top: 40px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.news-page {
+		margin-top: 30px;
+		margin-bottom: 30px;
+
+		&__title {
+			font-size: 24px;
+			line-height: 28px;
+		}
+
+		&__item {
+			margin-top: 30px;
+		}
+
+		&__pagination {
+			margin-top: 30px;
+		}
+	}
+}

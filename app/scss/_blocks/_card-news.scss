@@ -1,0 +1,85 @@
+.card-news {
+
+	&__img-box {
+		@include img-box-ratio(238 / 445);
+		border-radius: 8px;
+		overflow: hidden;
+
+		img {
+			transition: transform 0.25s;
+		}
+
+		&:hover {
+
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&__date {
+		margin-top: 25px;
+		font-weight: 500;
+		color: #666666;
+	}
+
+	&__title a,
+	&__link {
+		transition: color 0.25s;
+
+		&:hover {
+			color: #0dbbd8;
+		}
+	}
+
+	&__title {
+		margin-top: 15px;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	&__descr {
+		margin-top: 15px;
+		line-height: 24px;
+	}
+
+	&__link {
+		margin-top: 22px;
+		display: inline-flex;
+		align-items: center;
+
+		span {
+			font-size: 14px;
+			text-decoration: underline;
+			font-weight: 600;
+		}
+
+		i {
+			margin-left: 17px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.card-news {
+
+		&__date {
+			margin-top: 15px;
+		}
+
+		&__title {
+			margin-top: 10px;
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		&__descr {
+			line-height: 20px;
+		}
+
+		&__link {
+			margin-top: 15px;
+		}
+	}
+}
