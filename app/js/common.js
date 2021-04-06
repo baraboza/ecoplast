@@ -121,6 +121,15 @@ $(function() {
 		$('.card-page__content').hide();
 		$($(this).attr('href')).fadeIn();
 	});
+
+	$('.contacts__tabs-item a').click(function(e) {
+		e.preventDefault();
+		if ($(this).hasClass('--active')) return;
+		$('.contacts__tabs-item a').removeClass('--active');
+		$(this).addClass('--active');
+		$('.contacts__content').hide();
+		$($(this).attr('href')).fadeIn();
+	});
 });
 
 function projectsSetObject(index) {
